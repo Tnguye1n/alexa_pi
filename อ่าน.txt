@@ -1,0 +1,56 @@
+----------install program--------
+http://lifehacker.com/how-to-build-your-own-amazon-echo-with-a-raspberry-pi-1787726931
+
+*******Step One: Register for an Amazon Developer Account
+https://developer.amazon.com/?tag=lifehackeramzn-20&ascsubtag=f09ca9594e64f8825f26eb9658ee5611ea26b413&rawdata=%5Bt%7Clink%5Bp%7C1787726931%5Bau%7C5716493564230329059%5Bb%7Clifehacker
+
+*******Step Two: Clone and Install Alexa
+
+cd Desktop
+git clone https://github.com/alexa/alexa-avs-sample-app.git
+cd ~/Desktop/alexa-avs-sample-app
+
+แก้ nano automated_install.sh
+***ProductID=RaspberryPi
+***ClientID=amzn1.application-oa2-client.19663e76a0b1450d822b94afba38b803
+***ClientSecret=d27dd32e540083149ba65fe003dc75350eacd4930dd646cd4f90ff3726e14c39
+
+
+cd ~/Desktop/alexa-avs-sample-app
+. automated_install.sh
+
+
+
+------RUN-----
+cd ~/Desktop/alexa-avs-sample-app/samples
+cd companionService && npm start
+
+cd ~/Desktop/alexa-avs-sample-app/samples
+cd javaclient && mvn exec:exec
+
+cd ~/Desktop/alexa-avs-sample-app/samples
+cd wakeWordAgent/src && ./wakeWordAgent -e kitt_ai
+
+
+-----ERROR-------
+ERROR--This site can’t provide a secure connection
+     --https://www.youtube.com/watch?v=UO4QKwS-ehs
+     --in chrome brower
+       chrome://flags/
+       Experimental QUIC protocol >> Disable
+
+
+ERROR--wakeWordAgent
+https://github.com/alexa/alexa-avs-sample-app/issues/413
+https://github.com/alexa/alexa-avs-sample-app/issues/571
+http://wiringpi.com/download-and-install/
+
+install wiringPi
+
+
+
+
+
+
+
+
