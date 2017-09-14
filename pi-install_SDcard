@@ -1,0 +1,16 @@
+1.format SDcard
+2.Download RASPBIAN STRETCH WITH DESKTOP .zip  https://www.raspberrypi.org/downloads/raspbian/
+3.WRITING AN IMAGE TO THE SD CARD https://etcher.io/
+4.Creat ssh file in boot right click >> new >>document >> ssh
+5.connect Rasperry--router
+6.Check RassberryPI IP by sign in router (192.168.1.1) or use application
+6.terminal ssh pi@pi_ip
+7.install VNC
+  sudo apt-get update
+  sudo apt-get upgrade
+  sudo apt-get install tightvncsever
+  sudo apt-get install xrdp
+   vncserver :1
+7. sudo raspi-config >> interfacing option > vnc > enable
+8.install VNC on ubuntu
+
