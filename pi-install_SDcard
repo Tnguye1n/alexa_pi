@@ -1,4 +1,10 @@
-1.format SDcard
+1.format SDcard http://qdosmsq.dunbar-it.co.uk/blog/2013/06/noobs-for-raspberry-pi/
+  fdisk /dev/mmcblk0
+  d p
+  mkfs.vfat /dev/mmcblk0
+  mkfs.vfat /dev/mmcblk0p1
+  mkfs.vfat /dev/mmcblk0p2
+  Use disks App  
 2.Download RASPBIAN STRETCH WITH DESKTOP .zip  https://www.raspberrypi.org/downloads/raspbian/
 3.WRITING AN IMAGE TO THE SD CARD https://etcher.io/
 4.Creat ssh file in boot right click >> new >>document >> ssh
