@@ -9,7 +9,8 @@
 3.WRITING AN IMAGE TO THE SD CARD https://etcher.io/
 4.Creat ssh file in boot right click >> new >>document >> ssh
   if error
-  cd /media/mmxxx
+  ##cd /media/mmxxx
+  cd /media/boot
   touch ssh
 5.connect Rasperry--router
 6.Check RassberryPI IP by sign in router (192.168.1.1) or use application
